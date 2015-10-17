@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>选课系统登录</title>
+<script>
+	function load()
+	{
+		alert("欢迎来到选课系统！");
+	}
+</script>
+
+<style>
+body{
+	text-align:center;
+	margin:0;
+	padding:0;
+	font-family:"黑体";
+	font-size:1.3em;
+}
+
+#logo{
+	margin:50px 0 auto;
+}
+#input{
+	margin:0 auto;
+}
+#button{
+	margin:0 auto;
+}
+</style>
+</head>
+
+<body onLoad="load()">
+    <form method="post" action="save.php">
+        <p id="logo">
+            <a href="http://www.szu.edu.cn">
+                <img src="img/logo.jpg" width="250px" height="250px" alt="跳转到深圳大学首页"/>
+            </a>
+        </p>
+        <br>
+        <p id="input">
+            学号:<input type="text" name="usr">
+            <br>
+            密码:<input type="password" name="password">
+        </p>
+        <br>
+        <p id="button">
+            <input type="submit" name="submit" id="submit" value="登录">
+            
+            <input type="button" name="updateinfo" id="updateinfo" value="修改密码" onclick="window.open('updateinfo.html')">
+            <input type="button" name="notice" id="notice" value="选课指南" onclick="window.open('notice.html')">
+            <input type="reset" name="reset" id="reset" value="重置">
+            
+        </p>
+    </form>
+</body>
+</html>
